@@ -1,24 +1,30 @@
-# README
+# Odin-micro-reddit
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The second project/excercize in TheOdinProject's rails course. 
+This one is an excercize in models. The tasks included settings up models,
+validations, and associations.
 
-Things you may want to cover:
+A quick description:
 
-* Ruby version
+A user may create a post, or create a link under the post. A post may have multiple comments. 
+There aren't comments under commments i.e, no replies.
 
-* System dependencies
+## Relevant files:
 
-* Configuration
+Models
 
-* Database creation
+[app/models/comment.rb](app/models/comment.rb)
 
-* Database initialization
+[app/models/post.rb](app/models/post.rb)
 
-* How to run the test suite
+[app/models/user.rb](app/models/user.rb)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Migrations 
 
-* ...
+[db/migrate/20220929141307_create_users.rb](db/migrate/20220929141307_create_users.rb)
+
+[db/migrate/20220929143252_create_posts.rb](db/migrate/20220929143252_create_posts.rb)
+
+[db/migrate/20220929160927_create_comments.rb](db/migrate/20220929160927_create_comments.rb)
+
